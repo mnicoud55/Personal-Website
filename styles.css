@@ -412,6 +412,11 @@ section {
     background: #1E293B;
 }
 
+/* Training Section */
+.training {
+    background: #0F172A;
+}
+
 .education-timeline {
     max-width: 800px;
     margin: 0 auto;
@@ -498,6 +503,9 @@ section {
 }
 
 /* Skills Section */
+.skills {
+    background: #1E293B;
+}
 .skills-content {
     max-width: 900px;
     margin: 0 auto;
@@ -570,6 +578,9 @@ section {
 }
 
 /* Experience Section */
+#leadership {
+    background: #1E293B;
+}
 .experience-timeline {
     max-width: 900px;
     margin: 0 auto;
