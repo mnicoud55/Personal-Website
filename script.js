@@ -30,11 +30,14 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 // Navbar background change on scroll
 window.addEventListener('scroll', () => {
     const navbar = document.querySelector('.navbar');
+    const styles = getComputedStyle(document.documentElement);
+    const navBg = styles.getPropertyValue('--color-nav-scrolled').trim() || 'rgba(46, 57, 68, 0.98)';
+    const navBgDefault = styles.getPropertyValue('--color-nav').trim() || 'rgba(46, 57, 68, 0.95)';
     if (window.scrollY > 100) {
-        navbar.style.background = 'rgba(15, 23, 42, 0.98)';
+        navbar.style.background = navBg;
         navbar.style.boxShadow = '0 2px 20px rgba(0, 0, 0, 0.4)';
     } else {
-        navbar.style.background = 'rgba(15, 23, 42, 0.95)';
+        navbar.style.background = navBgDefault;
         navbar.style.boxShadow = '0 2px 20px rgba(0, 0, 0, 0.3)';
     }
 });
@@ -261,7 +264,7 @@ style.textContent = `
     }
     
     .nav-link.active {
-        color: #4F46E5 !important;
+        color: var(--color-accent) !important;
     }
     
     .nav-link.active::after {
@@ -335,11 +338,14 @@ function debounce(func, wait) {
 const debouncedScrollHandler = debounce(() => {
     // Navbar background change
     const navbar = document.querySelector('.navbar');
+    const styles = getComputedStyle(document.documentElement);
+    const navBg = styles.getPropertyValue('--color-nav-scrolled').trim() || 'rgba(46, 57, 68, 0.98)';
+    const navBgDefault = styles.getPropertyValue('--color-nav').trim() || 'rgba(46, 57, 68, 0.95)';
     if (window.scrollY > 100) {
-        navbar.style.background = 'rgba(15, 23, 42, 0.98)';
+        navbar.style.background = navBg;
         navbar.style.boxShadow = '0 2px 20px rgba(0, 0, 0, 0.4)';
     } else {
-        navbar.style.background = 'rgba(15, 23, 42, 0.95)';
+        navbar.style.background = navBgDefault;
         navbar.style.boxShadow = '0 2px 20px rgba(0, 0, 0, 0.3)';
     }
     
