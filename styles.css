@@ -593,7 +593,7 @@ section {
 
 /* Experience Section */
 #leadership {
-    background: var(--color-bg-alt);
+    background: var(--color-bg);
 }
 .experience-timeline {
     max-width: 900px;
@@ -687,7 +687,7 @@ section {
 
 /* Footer */
 .footer {
-    background: var(--color-bg);
+    background: var(--color-bg-alt);
     color: white;
     padding: 3rem 0 1rem 0;
 }
@@ -705,7 +705,7 @@ section {
 }
 
 .footer-section p {
-    color: var(--color-text-muted);
+    color: var(--color-text);
 }
 
 .footer-links {
@@ -715,7 +715,7 @@ section {
 }
 
 .footer-links a {
-    color: var(--color-text-muted);
+    color: var(--color-text);
     text-decoration: none;
     transition: color 0.3s ease;
     display: flex;
