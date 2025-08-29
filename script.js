@@ -185,17 +185,6 @@ document.querySelectorAll('.contact-link').forEach(link => {
     });
 });
 
-// Profile picture click effect
-const profilePicture = document.querySelector('.profile-picture');
-if (profilePicture) {
-    profilePicture.addEventListener('click', function() {
-        this.style.transform = 'scale(1.1) rotate(5deg)';
-        setTimeout(() => {
-            this.style.transform = 'scale(1) rotate(0deg)';
-        }, 300);
-    });
-}
-
 // Smooth reveal animation for sections
 function revealOnScroll() {
     const reveals = document.querySelectorAll('.fade-in');
