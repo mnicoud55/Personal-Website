@@ -13,6 +13,7 @@ html {
 	--color-bg: #212A31;
 	--color-bg-alt: #2E3944;
 	--color-card: #2E3944;
+    --color-card-alt: #34414f;
 	--color-text: #FFFFFF;
 	--color-text-muted: #D1E8E2;/*#D1E8E2 -- for slightly green tint*/
 	--color-text-subtle: #D1E8E2; /* rgba(255, 255, 255, 0.7) -- for more neutral tan tint*/
@@ -432,12 +433,102 @@ section {
     color: var(--color-accent-contrast);
 }
 
-/* Education Section */
+/* Work Experience Section */
 .work {
     background: var(--color-bg-alt);
 }
 
-/* Work Experience Section */
+.work-timeline {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.work-item {
+    position: relative;
+    margin-bottom: 3rem;
+    padding-left: 3rem;
+}
+
+.work-item::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 20px;
+    height: 20px;
+    background: var(--color-accent);
+    border-radius: 50%;
+    border: 4px solid white;
+    box-shadow: 0 0 0 4px var(--color-accent-2);
+}
+
+.work-item::after {
+    content: '';
+    position: absolute;
+    left: 9px;
+    top: 20px;
+    width: 2px;
+    height: calc(100% + 1rem);
+    background: var(--color-accent-2);
+}
+
+.work-item:last-child::after {
+    display: none;
+}
+
+.work-content {
+    background: var(--color-card-alt);
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.work-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.5rem;
+}
+
+.work-title {
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: var(--color-text);
+}
+
+.work-period {
+    background: var(--color-accent);
+    color: white;
+    padding: 0.25rem 1rem;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+.work-company {
+    font-size: 1.1rem;
+    color: var(--color-text);
+    margin-bottom: 1rem;
+    font-weight: 500;
+}
+
+.work-description {
+    color: var(--color-text-muted);
+    margin-bottom: 1.5rem;
+    line-height: 1.6;
+}
+
+.work-description li {
+    margin-bottom: 0.5rem;
+}
+
+.work-tech {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+/* Education Section */
 .education {
     background: var(--color-bg);
 }
@@ -555,7 +646,7 @@ section {
 }
 
 .skill-item {
-    background: var(--color-card);
+    background: var(--color-card-alt);
     padding: 1.5rem;
     border-radius: 10px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
