@@ -433,12 +433,12 @@ section {
 }
 
 /* Education Section */
-.education {
+.work {
     background: var(--color-bg-alt);
 }
 
-/* Training Section */
-.training {
+/* Work Experience Section */
+.education {
     background: var(--color-bg);
 }
 
@@ -511,7 +511,7 @@ section {
 
 .education-school {
     font-size: 1.1rem;
-    color: var(--color-accent);
+    color: var(--color-text);
     margin-bottom: 1rem;
     font-weight: 500;
 }
@@ -603,22 +603,22 @@ section {
     transform: translateY(-2px);
 }
 
-/* Experience Section */
-#robotics {
+/* Additional Experience Section */
+#additional {
     background: var(--color-bg);
 }
-.experience-timeline {
+.additional-timeline {
     max-width: 900px;
     margin: 0 auto;
 }
 
-.experience-item {
+.additional-item {
     position: relative;
     margin-bottom: 3rem;
     padding-left: 3rem;
 }
 
-.experience-item::before {
+.additional-item::before {
     content: '';
     position: absolute;
     left: 0;
@@ -631,7 +631,7 @@ section {
     box-shadow: 0 0 0 4px var(--color-accent-2);
 }
 
-.experience-item::after {
+.additional-item::after {
     content: '';
     position: absolute;
     left: 9px;
@@ -641,31 +641,31 @@ section {
     background: var(--color-accent-2);
 }
 
-.experience-item:last-child::after {
+.additional-item:last-child::after {
     display: none;
 }
 
-.experience-content {
+.additional-content {
     background: var(--color-card);
     padding: 2rem;
     border-radius: 15px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
 }
 
-.experience-header {
+.additional-header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-bottom: 0.5rem;
 }
 
-.experience-title {
+.additional-title {
     font-size: 1.3rem;
     font-weight: 600;
     color: var(--color-text);
 }
 
-.experience-period {
+.additional-period {
     background: var(--color-accent);
     color: white;
     padding: 0.25rem 1rem;
@@ -674,24 +674,24 @@ section {
     font-weight: 500;
 }
 
-.experience-company {
+.additional-company {
     font-size: 1.1rem;
-    color: var(--color-accent);
+    color: var(--color-text);
     margin-bottom: 1rem;
     font-weight: 500;
 }
 
-.experience-description {
+.additional-description {
     color: var(--color-text-muted);
     margin-bottom: 1.5rem;
     line-height: 1.6;
 }
 
-.experience-description li {
+.additional-description li {
     margin-bottom: 0.5rem;
 }
 
-.experience-tech {
+.additional-tech {
     display: flex;
     flex-wrap: wrap;
     gap: 0.5rem;
@@ -813,14 +813,14 @@ section {
     }
 
     .education-header,
-    .experience-header {
+    .additional-header {
         flex-direction: column;
         align-items: flex-start;
         gap: 0.5rem;
     }
 
     .education-item,
-    .experience-item {
+    .additional-item {
         padding-left: 2rem;
     }
 
